@@ -27,10 +27,15 @@ $(function(){
     pizza.diameter = parseInt($("#size").val());
     pizza.kind = $("#type").val();
 
-    $("#pizza-type").text(pizza.kind);
-    $("#slices").text(pizza.slices());
+    if(pizza.diameter > 4){
+      $("#error").hide();
+      $("#pizza-type").text(pizza.kind);
+      $("#slices").text(pizza.slices());
 
-    $("#order-results").show();
+      $("#order-results").show();
+    } else {
+      $("#error").show();
+    }
 
     event.preventDefault();
   });
