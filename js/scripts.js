@@ -12,28 +12,28 @@ var Pizza = {
     if(this.kind !== "cheese" && this.diameter >= 6){
       slices -= 2;
     }
-
+debugger;
     return slices - (slices%2);
   }
 
 };
 
 
-// $(function(){
-//
-//   $("pizza-order").submit(function(event){
-//
-//     var size = parseInt($("#size").val());
-//     var  = $("#type").val();
-//
-//     var pizza = Object.create(Pizza);
-//     pizza.diameter = size;
-//     pizza. = type
-//
-//     var slices =
-//
-//     event.preventDefault();
-//   });
-//
-//
-// });
+$(function(){
+
+  $("#pizza-order").submit(function(event){
+
+    var pizza = Object.create(Pizza);
+    pizza.diameter = parseInt($("#size").val());
+    pizza.kind = $("#type").val();
+
+    $("#pizza-type").text(pizza.kind);
+    $("#slices").text(pizza.slices());
+
+    $("#order-results").show();
+
+    event.preventDefault();
+  });
+
+
+});
