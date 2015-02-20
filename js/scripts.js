@@ -35,6 +35,7 @@ $(function(){
       $("#order-results").show();
     } else {
       $("#error").show();
+      $("#order-results").hide();
     }
 
     event.preventDefault();
