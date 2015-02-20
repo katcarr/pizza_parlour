@@ -9,7 +9,7 @@ var Pizza = {
       slices = this.diameter - 5;
     }
 
-    if(this.type !== "cheese" && this.diameter >= 6){
+    if(this.kind !== "cheese" && this.diameter >= 6){
       slices -= 2;
     }
 
@@ -17,3 +17,23 @@ var Pizza = {
   }
 
 };
+
+
+// $(function(){
+//
+//   $("pizza-order").submit(function(event){
+//
+//     var size = parseInt($("#size").val());
+//     var  = $("#type").val();
+//
+//     var pizza = Object.create(Pizza);
+//     pizza.diameter = size;
+//     pizza. = type
+//
+//     var slices =
+//
+//     event.preventDefault();
+//   });
+//
+//
+// });
