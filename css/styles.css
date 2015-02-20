@@ -3,5 +3,9 @@
 }
 
 body{
-  background-image: url("img/cheesepizza.jpeg")
+  background-image: url("img/cheesepizza.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
